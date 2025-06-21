@@ -1,0 +1,222 @@
+*{
+  background: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header */
+.header{
+  background: white !important;
+}
+
+/* headernav */
+.navicon{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.myportfolio{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mynav{
+    width: 60% !important;
+  justify-content: space-evenly !important;
+  background: white;
+}
+
+.navlist{
+    margin-right: 20px !important;
+    background: white;  
+}
+
+.navtext:hover{
+ color: red !important;
+}
+
+.aboutmain{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  height: 100%;
+  /* border: 1px solid; */
+  align-items: center;
+  justify-content: center;
+}
+.aboutimage{
+  width: 40%;
+  height: 700px;
+  padding: 20px;
+  /* border: 1px solid; */
+}
+
+
+.aboutcontent{
+    width: 60%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Social icons */
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 600px;
+}
+.check{
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons{
+  width:30px;
+  height: 30px;
+}
+
+/* About */
+
+.aboutcontent{
+    display: grid;
+    grid-template-rows: repeat(rows, 1fr);
+    grid-template-columns: repeat(column, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+/* Span class */
+.highlight{
+  font-weight:xx-large;
+  font-weight: bold;
+  color: red;
+  background: lab(97.33% -20.03 81.69); 
+}
+
+.aboutpara{
+    padding: 20px;
+    background: lab(97.33% -20.03 81.69); 
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    font-size:large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.certifiactelist{
+    padding: 20px;
+    background: lab(97.33% -20.03 81.69); 
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    font-size:large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.ullist{
+    background: lab(97.33% -20.03 81.69); 
+}
+
+.strengthlist{
+    padding: 20px;
+    background: lab(97.33% -20.03 81.69); 
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    font-size:large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+
+.career{
+    padding: 20px;
+    height: 193px;
+    background: lab(97.33% -20.03 81.69); 
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    font-size:large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.careerpara{
+    background: lab(97.33% -20.03 81.69);
+}
+
+.about{
+    grid-column: span 12;
+}
+.certificate{
+    grid-column: span 12;
+}
+.strength{
+    grid-column: span 6;
+}
+.careergoal{
+    grid-column: span 6;
+}
+
+.eachcard{
+
+  transition: transform 0.3s ease;
+}
+
+.eachcard:hover {
+      transform: scale(1.03);
+    }
+
+/* footer */
+
+footer{
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+  .aboutmain {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .aboutimage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutimage img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .aboutcontent {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .social {
+display: none;
+  }
+
+  .strength, .careergoal {
+    grid-column: span 1;
+  }
+  .career{
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .strength, .careergoal {
+    grid-column: span 12;
+  }
+}
