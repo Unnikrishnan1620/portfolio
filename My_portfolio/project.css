@@ -1,0 +1,109 @@
+*{
+  background: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header */
+.header{
+  background: white !important;
+}
+
+/* headernav */
+.navicon{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.myportfolio{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mynav{
+    width: 60% !important;
+  justify-content: space-evenly !important;
+  background: white;
+}
+
+.navlist{
+    margin-right: 20px !important;
+    background: white;  
+}
+
+.navtext:hover{
+ color: red !important;
+}
+
+/* Card sections */
+.cardssection1,.cardssection2{
+  margin: 20px 0 50px 0;
+  padding: 10px;
+}
+
+/* Each cards */
+.eachcard{
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.eachcard:hover {
+      transform: scale(1.03);
+    }
+
+
+
+
+/* Social icons */
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.check{
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons{
+  width:30px;
+  height: 30px;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+/* Mediaquery */
+@media (max-width: 768px) {
+    .social {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .cardssection1,.cardssection2{
+  margin: 0px 0 0px 0;
+  padding: 10px;
+}
+}

@@ -1,0 +1,111 @@
+*{
+  background: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header */
+.header{
+  background: white !important;
+}
+
+/* headernav */
+.navicon{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.myportfolio{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mynav{
+    width: 60% !important;
+  justify-content: space-evenly !important;
+  background: white;
+}
+
+.navlist{
+    margin-right: 20px !important;
+    background: white;  
+}
+
+.navtext:hover{
+ color: red !important;
+}
+
+/* Main */
+
+main {
+  padding: 40px 20px;
+}
+
+main h1 {
+  font-size: 3.5em;
+  color: red ;
+  justify-content: center;
+  display: flex;
+}
+
+.mainpara{
+  font-size: large;
+  color: rgba(0, 0, 0, 0.74);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 150px;
+  transition: 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+}
+
+.contact-box i {
+  font-size: 24px;
+  color: #e04c4c;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-box a {
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 0.9em;
+ 
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
