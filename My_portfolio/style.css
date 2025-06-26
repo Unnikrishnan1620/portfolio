@@ -1,0 +1,214 @@
+*{
+  background: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header */
+.header{
+  background: white !important;
+}
+
+/* headernav */
+.navicon{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.myportfolio{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mynav{
+    width: 60% !important;
+  justify-content: space-evenly !important;
+  background: white;
+}
+
+.navlist{
+    margin-right: 20px !important;
+    background: white;  
+}
+
+.navtext:hover{
+ color: red !important;
+}
+
+/* Home main */
+
+.homemain{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  height: 100%;
+  /* border: 1px solid; */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home content */
+
+.homecontent{
+  width: 60%;
+  height: 500px;
+  padding: 20px;
+  /* border: 1px solid; */
+}
+
+.fresher h4{
+font-weight: bolder;
+font-size: 30px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.tickicon{
+  width: 30px;
+  height: 25px;
+}
+
+.bigtext{
+  font-weight: bolder;
+  font-size: 120px;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 56px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: red;
+}
+
+.summary{
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-indent: 20px;
+  color: black;
+}
+
+/* Span class */
+.highlight{
+  font-weight:xx-large;
+  color: red;
+}
+
+/* Social icons */
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 100px;
+}
+.check{
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons{
+  width:30px;
+  height: 30px;
+}
+
+.eachcard{
+
+  transition: transform 0.3s ease;
+}
+
+.eachcard:hover {
+      transform: scale(1.03);
+    }
+
+    
+    .resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20%;
+  padding: 12px 24px;
+  background-color: #e04c4c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #c43838;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
+/* media query */
+@media (max-width: 768px) {
+  .homemain {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .homecontent {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+  }
+
+  .bigtext {
+    font-size: 1.8rem;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .social {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+
+  .homeimage img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin-top: 40px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .resume-button {
+    margin-left: 30%;
+  }
+}
